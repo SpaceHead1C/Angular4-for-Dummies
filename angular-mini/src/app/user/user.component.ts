@@ -13,4 +13,9 @@ import { Component, Input } from "@angular/core";
 export class UserComponent {
     //Decorator of expecting input data
     @Input() user;
+    isMarked = false;
+
+    onClick() { // events handler (click)
+        this.isMarked = true;
+    }
 }

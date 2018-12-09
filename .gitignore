@@ -1,0 +1,43 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/angular-mini/dist
+/angular-mini/tmp
+/angular-mini/out-tsc
+
+# dependencies
+/angular-mini/node_modules
+
+# profiling files
+/angular-mini/chrome-profiler-events.json
+/angular-mini/speed-measure-plugin.json
+
+# IDEs and editors
+/angular-mini/.idea
+/angular-mini/.project
+/angular-mini/.classpath
+/angular-mini/.c9/
+/angular-mini/*.launch
+/angular-mini/.settings/
+/angular-mini/*.sublime-workspace
+
+# IDE - VSCode
+/angular-mini/.vscode/*
+/angular-mini/!.vscode/settings.json
+/angular-mini/!.vscode/tasks.json
+/angular-mini/!.vscode/launch.json
+/angular-mini/!.vscode/extensions.json
+
+# misc
+/angular-mini/.sass-cache
+/angular-mini/connect.lock
+/angular-mini/coverage
+/angular-mini/libpeerconnection.log
+/angular-mini/npm-debug.log
+/angular-mini/yarn-error.log
+/angular-mini/testem.log
+/angular-mini/typings
+
+# System Files
+/angular-mini/.DS_Store
+/angular-mini/Thumbs.db

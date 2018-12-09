@@ -10,6 +10,12 @@ import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SetupPageComponent } from './setup-page/setup-page.component';
+import { RouterModule } from '@angular/router';
+
+const routes = [
+  {path: '', component: HomePageComponent},
+  {path: 'setup', component: SetupPageComponent}
+]
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import { SetupPageComponent } from './setup-page/setup-page.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule, // for http
-    FormsModule // for suppor ngModel
+    FormsModule, // for suppor ngModel
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

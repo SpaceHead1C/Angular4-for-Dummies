@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component'; // import new component
 import { HttpClientModule } from '@angular/common/http';
 import { HoverDirective } from './hover.directive';
+import { FormsModule } from '@angular/forms';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent, // registration new component
-    HoverDirective // registration new directive
+    HoverDirective, // registration new directive
+    SearchPipe // registration new pipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule // for http
+    HttpClientModule, // for http
+    FormsModule // for suppor ngModel
   ],
   providers: [],
   bootstrap: [AppComponent]

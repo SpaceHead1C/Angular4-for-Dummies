@@ -11,6 +11,7 @@ import { RandomUsers } from './user/user.interface';
 
 export class AppComponent {
   users = []; // 'this.users' later
+  searchStr = '';
 
   // For service injection
   constructor(private usersService: UsersService) { } // initialize new service

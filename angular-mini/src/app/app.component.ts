@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
+import { UsersService } from './users.service'; // import new service
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [UsersService] // register new service
 })
 export class AppComponent {
-  users = [
-    {name: 'WFM 1'},
-    {name: 'WFM 2'},
-    {name: 'WFM 3'},
-    {name: 'WFM 4'},
-    {name: 'WFM 5'}
-  ]
+  users = []; // 'this.users' later
+
+  constructor(private usersService: UsersService) { // initialize new service
+    this.users = this.usersService.users
+  }
 }

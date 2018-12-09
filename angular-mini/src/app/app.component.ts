@@ -10,7 +10,11 @@ import { UsersService } from './users.service'; // import new service
 export class AppComponent {
   users = []; // 'this.users' later
 
-  constructor(private usersService: UsersService) { // initialize new service
+  // For service injection
+  constructor(private usersService: UsersService) {} // initialize new service
+
+  // Callback for initialize
+  ngOnInit() { // components life cycle stage
     this.users = this.usersService.users
   }
 }

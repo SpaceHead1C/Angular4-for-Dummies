@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({ // decorator because '@'
     /*There are two parameters required
@@ -10,4 +10,7 @@ import { Component } from "@angular/core";
     styleUrls: ['./user.component.scss']
 })
 
-export class UserComponent {}
+export class UserComponent {
+    //Decorator of expecting input data
+    @Input() user;
+}
